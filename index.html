@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="img-login"></div>
+    <div class="login-txt">
+        <h1>Faça login</h1>
+    </div>
+    <form onsubmit="cadastro()" class="login" action="">
+        <div class="icon-user">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="email">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="E-mail...">
+        </div>
+        <div class="senha">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="senha" placeholder="Senha...">
+        </div>
+        <button type="submit">Entrar</button>
+        <div class="acount-info">
+            <a href="">Esqueceu a senha?</a>
+            <a href="">Criar conta.</a>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

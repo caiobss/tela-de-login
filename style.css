@@ -1,0 +1,91 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .img-login{
+            position: relative;
+            background-image: url(/jefferson-santos-9SoCnyQmkzI-unsplash.jpg);
+            background-size: cover;
+            height: 100vh;
+            width: 1005;
+        }
+        .login-txt{
+            position: absolute;
+            top: 3.2rem;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            font-size: 1.1rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            animation: exibir 1.3s 0.1s forwards;
+            opacity: 0;
+        }
+        .login{
+            background-color: rgb(47, 61, 83);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 70vh;
+            width: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: .2rem .3rem 10px rgb(27, 27, 27);
+            animation: exibir 1.3s;
+        }
+        @keyframes exibir{
+            0%{
+                transform: translate(-40rem, -50%);
+                opacity: 0;
+            }
+            100%{
+                transform: translate(1);
+                opacity: 1;
+            }
+        }
+        .login i{
+            color: white;
+            margin-right: .5rem;
+        }
+        .login .icon-user{
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+        .login .email{
+            margin-bottom: 2rem;
+        }
+        .login button{
+            background-color: rgb(212, 71, 71);
+            color: white;
+            border: none;
+            height: 2.4rem;
+            width: 10rem;
+            margin-top: 2rem;
+            border-radius: 10px;
+            box-shadow: .1rem .2rem 1px rgba(46, 46, 46, 0.808);
+            font-size: 1rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .login button:hover{
+            background-color: rgb(160, 57, 57);
+        }
+        .login input{
+            height: 2.5rem;
+            width: 13.5rem;
+            border-radius: 10px;
+            border: none;
+            transition: 0.3s;
+        }
+        .login input:hover{
+            width: 16.5rem;
+        }
+        .acount-info, a{
+            margin: 1rem .2rem;
+            color: white;
+        }
